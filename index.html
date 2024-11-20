@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+  <title>Nature Gallery</title>
+</head>
+
+<body>
+
+  <header>
+    <div class="container">
+      <div class="nav-bar">
+        <div class="logo">
+          <a href="#banner">
+            <h1><span>N</span>ature <span>G</span>allery</h1>
+          </a>
+        </div>
+        <div class="nav-link">
+          <a href="#photoGallery">Explore</a>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <section id="banner">
+    <div class="banner-content">
+      <h1>Welcome to the</h1>
+      <h1>Beauty of Nature</h1>
+      <a href="#photoGallery" class="explore">Explore Gallery</a>
+    </div>
+  </section>
+
+  <section id="photoGallery" class="gallery-section">
+    <div class="container">
+      <h2 class="section-title">Our Gallery</h2>
+      <div class="gallery">
+        <img src="image_1.jpg" onclick="showFullImage(0)">
+        <img src="image_2.jpg" onclick="showFullImage(1)">
+        <img src="image_3.jpg" onclick="showFullImage(2)">
+        <img src="image_4.jpg" onclick="showFullImage(3)">
+        <img src="image_5.jpg" onclick="showFullImage(4)">
+        <img src="image_6.jpg" onclick="showFullImage(5)">
+        <img src="image_7.jpg" onclick="showFullImage(6)">
+        <img src="image_8.jpg" onclick="showFullImage(7)">
+        <img src="image_9.jpg" onclick="showFullImage(8)">
+        <img src="image_10.jpg" onclick="showFullImage(9)">
+        <img src="image_11.jpg" onclick="showFullImage(10)">
+        <img src="image_12.jpg" onclick="showFullImage(11)">
+        <img src="image_13.jpeg" onclick="showFullImage(12)">
+        <img src="image_14.jpg" onclick="showFullImage(13)">
+        <img src="image_15.jpg" onclick="showFullImage(14)">
+      </div>
+
+      <div class="full-img" id="fullImageContainer">
+        <span class="close" onclick="closeFullImage()">X</span>
+        <span class="prev" onclick="changeImage(-1)">&#10094;</span>
+        <img src="image_1.jpg" id="fullImage" alt="">
+        <span class="next" onclick="changeImage(1)">&#10095;</span>
+      </div>
+    </div>
+  </section>
+
+  <footer id="footer">
+    <div class="container">
+      <div class="footer-content">
+        <p>&copy; 2024 Nature Gallery. All Rights Reserved.</p>
+        <p>Contact: <a href="mailto:info@naturegallery.com">info@naturegallery.com</a> | Phone: +123 456 7890</p>
+      </div>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+
+</body>
+
+</html>
